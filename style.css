@@ -136,6 +136,16 @@ body h1{
     border-radius: 5px;
 }
 
+button.active{
+    background-color:hsl(172, 74%, 63%);
+    color : hsl(183, 100%, 15%);
+}
+
+input.active-input{
+    background-color:hsl(172, 74%, 63%);
+    color : hsl(183, 100%, 15%);
+}
+
 
 @media screen and (min-width:1440px) {
 
