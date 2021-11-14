@@ -19,7 +19,7 @@
 
             <div class="container">
                 <h4>Bill</h4>
-                <input type="number" placeholder="0">
+                <input type="number" placeholder="0" id="bill" onblur="getbill()">
                 <span>$</span>
             </div>
 
@@ -32,14 +32,14 @@
                         <button>15%</button>
                         <button>25%</button>
                         <button>50%</button>
-                        <input type="number"  placeholder="Custom">
+                        <input type="number"  placeholder="Custom" id="input-share" onblur="getinputshare()">
                     </div>
                 </div>
             </div>
 
             <div class="container">
                 <h4>Number of People</h4>
-                <input type="number" placeholder="0">
+                <input type="number" placeholder="0" id="people" onblur="getpeople()">
                 <span id="person"><img src="images/icon-person.svg" alt=""></span>
             </div>
 
