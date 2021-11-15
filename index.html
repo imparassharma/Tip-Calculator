@@ -33,6 +33,9 @@
                         <button>25%</button>
                         <button>50%</button>
                         <input type="number"  placeholder="Custom" id="input-share" onblur="getinputshare()">
+                        <div class="error">
+                            <p>Click custom value again to select!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,15 +52,15 @@
             <h4>Tip Amount</h4>
             <div class="result">
                 <span>/ person</span>
-                <h1>$0.00</h1>
+                <h1 id="tip-amount">$0.00</h1>
             </div>
             <h4>Total</h4>
             <div class="result">
                 <span>/ person</span>
-                <h1>$0.00</h1>
+                <h1 id="total-bill">$0.00</h1>
             </div>
 
-            <button id="reset">RESET</button>
+            <button id="reset">Calculate</button>
         </div>
     </div>
 </body>
