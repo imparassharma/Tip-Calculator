@@ -1,0 +1,206 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body h1{
+    margin-top: 3rem;
+    letter-spacing: 0.7rem;
+    font-size: 23px;
+    color: hsl(183, 100%, 15%);
+    opacity: 0.8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0px 0px;
+    padding: 2rem;
+}
+
+.container{
+    width: 100%;
+}
+
+.container h4{
+    margin-bottom: 0.5rem;
+    color:hsl(186, 14%, 43%);
+}
+
+.container input{
+    padding: 0.7rem;
+    width: 90%;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    text-align: right;
+    display: flex;
+    color: hsl(183, 100%, 15%);
+    font-size: 23px;
+    font-weight: 700;
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.container input::-webkit-outer-spin-button,.container input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.container input::-webkit-input-placeholder{
+    color: hsl(184, 14%, 56%);
+}
+
+.container span{
+    font-size: 25px;
+    position: relative;
+    bottom: 2.7rem;
+    left: 0.7rem;
+    color: hsl(184, 14%, 56%);
+}
+
+#middle-container{
+    margin-top: -2rem;
+}
+
+.col button{
+    width: 45%;
+    padding: 0.7rem 0rem;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    font-size: 23px;
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    border: none;
+    margin: 0.3rem;
+}
+
+.col input{
+    width: 38%;
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+.col input::-webkit-input-placeholder{
+    color: hsl(186, 14%, 43%);
+}
+
+#person{
+    bottom: 2.9rem;
+}
+
+.calculator{
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.calculator h4{
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    letter-spacing: 0;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    gap: 10%;
+}
+
+.result h1{
+    margin: 0;
+    color:  hsl(172, 67%, 45%);
+}
+
+.calculator span{
+    color: hsl(184, 14%, 56%);
+    font-weight: 500;
+}
+
+.calculator button{
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 20px;
+    background-color:hsl(172, 67%, 45%);
+    font-weight: 700;
+    color:  hsl(183, 100%, 15%);
+    padding: 0.8rem 0rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button.active{
+    background-color:hsl(172, 74%, 63%);
+    color : hsl(183, 100%, 15%);
+}
+
+input.active-input{
+    background-color:hsl(172, 74%, 63%);
+    color : hsl(183, 100%, 15%);
+}
+
+.error{
+    display: none;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.error.show{
+    display:block;
+}
+
+@media screen and (min-width:1440px) {
+
+    .main{
+        flex-direction: row;
+        border-radius: 15px;
+        width: 50rem;
+    }
+    
+    .container-section{
+        width: 60%;
+    }
+    
+    .calculator{
+        width: 40%;
+        padding: 3rem;
+    }
+
+    .container{
+        width: 94%;
+    }
+
+    .col button{
+        width: 28%;
+    }
+
+    .col input{
+        width: 22.5%;
+    }
+
+    .calculator h1{
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+
+    .calculator button{
+        margin-top: 5rem;
+    }
+
+    .calculator h4{
+        margin-bottom: 0;
+    }
+
+  
+}

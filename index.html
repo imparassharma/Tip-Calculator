@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tip Spiltter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/124816636a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>SPLI <br>TTER</h1>
+    <div class="main">
+        <div class="container-section">
+
+            <div class="container">
+                <h4>Bill</h4>
+                <input type="number" placeholder="0" id="bill" onblur="getbill()">
+                <span>$</span>
+            </div>
+
+            <div class="container" id="middle-container">
+                <h4>Select Tip %</h4>
+                <div class="row">
+                    <div class="col">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="number"  placeholder="Custom" id="input-share" onblur="getinputshare()">
+                        <div class="error">
+                            <p>Click custom value again to select!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h4>Number of People</h4>
+                <input type="number" placeholder="0" id="people" onblur="getpeople()">
+                <span id="person"><img src="images/icon-person.svg" alt=""></span>
+            </div>
+
+        </div>
+
+        <div class="calculator">
+            <h4>Tip Amount</h4>
+            <div class="result">
+                <span>/ person</span>
+                <h1 id="tip-amount">$0.00</h1>
+            </div>
+            <h4>Total</h4>
+            <div class="result">
+                <span>/ person</span>
+                <h1 id="total-bill">$0.00</h1>
+            </div>
+
+            <button id="reset">Calculate</button>
+        </div>
+    </div>
+</body>
+</html>
